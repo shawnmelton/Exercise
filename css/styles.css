@@ -5,9 +5,9 @@
 }
 
 html {
-    font-family: Myriad Pro; /* 1 */
-    -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    font-family: Myriad Pro;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
 }
 
 body {
@@ -65,7 +65,7 @@ div.wrapper {
 .overlay-content {
     height: 300px;
     width: 512px;
-    background: white;
+    background: #fff;
     z-index: 3;
     position: fixed;
     top: 25%;
@@ -81,12 +81,12 @@ div.wrapper {
     }
 
     .overlay-content p {
-        margin: 20px;
+        margin: 1.25em;
     }
 
 .container {
     width: 86.9140625%;
-    height: 1024px;
+    height: 64em;
     margin: 0 6.54296875%;
     position: relative;
     clear: both;
@@ -107,7 +107,7 @@ div.noMarRight {
 }
 
 div.blkBorder {
-    border: 1px solid #000;
+    border: .0625em solid #000;
 }
 
 div.right {
@@ -176,7 +176,7 @@ div.purple {
     margin-top: -36.62109375vw !important;
 }
 
-@media screen and (min-width: 512px) {
+@media screen and (min-width: 32em) {
     .overlay-content {
         left: 150%;
         margin-left: -256px;
