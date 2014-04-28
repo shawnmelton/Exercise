@@ -57,14 +57,14 @@ div.wrapper {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #000000;
+    background-color: #000;
     z-index: 1;
     opacity: .5;
 }
 
 .overlay-content {
-    height: 300px;
-    width: 512px;
+    height: 18.75em;
+    width: 32em;
     background: #fff;
     z-index: 3;
     position: fixed;
@@ -133,7 +133,7 @@ div.red {
 
 div.blue {
     background-color: #04b6f0;
-    margin-top: 1.26953125% !important;
+    margin-top: 1.26953125%;
     width: 69.55056179775281%;
     height: 11.42578125vw;
 }
@@ -147,7 +147,7 @@ div.black {
 div.green {
     background-color: #10ad00;
     width: 92.13483146067416%;
-    margin-left: 3.93258426966292% !important;
+    margin-left: 3.93258426966292%;
     height: 12.20703125vw;
 }
 
@@ -173,7 +173,7 @@ div.purple {
     background-color: #630bbd;
     width: 14.04494382022472%;
     height: 38.57421875vw;
-    margin-top: -36.62109375vw !important;
+    margin-top: -36.62109375vw;
 }
 
 @media screen and (min-width: 32em) {
@@ -184,6 +184,9 @@ div.purple {
 
     section.overlay-content.center {
         left: 50%;
+        -moz-transition: left 2s ease-in;
+        -o-transition: left 2s ease-in;
+        -webkit-transition: left 2s ease-in;
         transition: left 2s ease-in;
     }
 }
