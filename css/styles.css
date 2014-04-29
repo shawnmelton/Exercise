@@ -180,7 +180,7 @@ div.purple {
 @media screen and (min-width: 32em) {
     .overlay-content {
         left: 150%;
-        margin-left: -256px;
+        margin-left: -16em;
     }
 
     section.overlay-content.center {
