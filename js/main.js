@@ -1,13 +1,13 @@
 ﻿window.onload = function() {
-    var overlay = document.querySelector('.overlay'),
-        overlayContent = document.querySelector('.overlay-content');
+    var overlay = document.getElementById('overlay'),
+        overlayContent = document.getElementById('overlay-content');
 
     setTimeout(function() {
-        overlay.className = "overlay";
-        overlayContent.className += " center";
+        overlay.className = overlay.className.replace('hidden', '');
+        overlayContent.className += ' center';
         setTimeout(function() {
-            overlay.className += " isHidden";
-            overlayContent.className += " isHidden";
+            overlay.className += ' hidden';
+            overlayContent.className += ' hidden';
         }, 5000);
     },3000);
 };

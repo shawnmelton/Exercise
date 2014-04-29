@@ -1,37 +1,31 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html class="bgWhite">
     <head>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
         <title>Exercise 1</title>
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
-        <div class="wrapper">
-            <section class="overlay-content">
-                <article>
-                    <header>
-                        <h1>This is a headline that will not wrap.</h1>
-                    </header>
-                    <section>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra laoreet libero non laoreet. Aliquam porttitor at nisi at fermentum. Nullam in lobortis massa. In at placerat lectus, non lacinia erat. Fusce rhoncus vehicula diam, in suscipit justo varius vitae. Nunc egestas nec turpis ut euismod. Nullam vel aliquam mauris. Mauris venenatis, neque quis iaculis commodo, turpis lorem elementum tellus, quis rutrum magna odio ac magna. Proin imperdiet dolor non est fringilla mollis. Donec eu nisl aliquet, ultrices metus ac, condimentum risus. Phasellus vehicula sed nunc nec pharetra. Nunc mollis a sapien sit amet venenatis. Quisque vitae lacus eget leo eleifend congue sed nec elit. Aenean vel metus mauris. Fusce dapibus,</p>
-                    </section>
-                </article>
-            </section>
-            <div class="overlay isHidden"></div>
-            
-            <section class="container clearfix">
-                <div class="orange noMarLeft noMarRight blkBorder"></div>
-                <div class="red noMarLeft"></div>
-                <div class="blue isInFront"></div>
-                <div class="black noMarRight right"></div>
-                <div class="green"></div>
-                <div class="gold noMarLeft noMarRight blkBorder isInFront"></div>
-                <div class="maroon noMarRight right"></div>
-                <div class="purple right"></div>
-                <div class="grey right"></div>
-            </section>
-            
-        </div>
-        <script src="js/main.js"></script>
+    <body class="noMargin noPadding noOverflow relative">
+        <section id="container" class="clearfix block">
+            <div id="orange" class="noMarLeft noMarRight blkBorder"></div>
+            <div id="black" class="black noMarRight right"></div>
+            <div id="red" class="left red noMarLeft"></div>
+            <div id="blue" class="left blue relative"></div>
+            <div id="green" class="left green"></div>
+            <div id="gold" class="left gold noMarLeft noMarRight blkBorder relative"></div>
+            <div id="maroon" class="maroon noMarRight right"></div>
+            <div id="purple" class="purple right"></div>
+            <div id="grey" class="grey right"></div>
+        </section>
+        <div id="overlay" class="absolute hidden top0 left0 right0 bottom0 bgBlack"></div>
+        <section id="overlay-content" class="bgWhite absolute">
+            <article class="block borderBox">
+                <header class="block">
+                    <h1 class="textCenter">This is a headline that will not wrap.</h1>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra laoreet libero non laoreet. Aliquam porttitor at nisi at fermentum. Nullam in lobortis massa. In at placerat lectus, non lacinia erat. Fusce rhoncus vehicula diam, in suscipit justo varius vitae. Nunc egestas nec turpis ut euismod. Nullam vel aliquam mauris. Mauris venenatis, neque quis iaculis commodo, turpis lorem elementum tellus, quis rutrum magna odio ac magna. Proin imperdiet dolor non est fringilla mollis. Donec eu nisl aliquet, ultrices metus ac, condimentum risus. Phasellus vehicula sed nunc nec pharetra. Nunc mollis a sapien sit amet venenatis. Quisque vitae lacus eget leo eleifend congue sed nec elit. Aenean vel metus mauris. Fusce dapibus,</p>
+            </article>
+        </section>
+        <script async src="js/main.js"></script>
     </body>
 </html>

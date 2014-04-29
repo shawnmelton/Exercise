@@ -1,31 +1,190 @@
-﻿* {
+﻿
+html {
+    font-family: Myriad Pro;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+}
+
+    h1 {
+        font-size: 1.875em;
+        margin: 0.67em 0;
+    }
+
+    #overlay {
+        opacity: .5;
+    }
+
+    #overlay-content {
+        height: 18.75em;
+        width: 32em;
+        top: 15%;
+        left: 150%;
+    }
+
+    #overlay-content.center {
+        -moz-transition: left 2s ease-in;
+        -o-transition: left 2s ease-in;
+        -webkit-transition: left 2s ease-in;
+        transition: left 2s ease-in;
+        left: 0;
+    }
+
+        #overlay-content p {
+            margin: 1.25em;
+        }
+
+    #container {
+        width: 86.9140625%;
+        height: 64em;
+        margin: 0 6.54296875%;
+    }
+
+        #container > div {
+            margin: 0.48828125%;
+        }
+
+        #orange {
+            background-color: #f47a00;
+            height: 9.84375vw;
+        }
+
+        #red {
+            background-color: #fc3a1b;
+            width: 14.04494382022472%;
+            height: 12.20703125vw;
+        }
+
+        #container > div#blue {
+            margin: 0.18828125%;
+            background-color: #04b6f0;
+            margin-top: 1.26953125%;
+            width: 69.55056179775281%;
+            height: 11.42578125vw;
+        }
+
+        #black {
+            background-color: #000;
+            width: 14.04494382022472%;
+            height: 12.20703125vw;
+        }
+
+        #container > div#green {
+            background-color: #10ad00;
+            width: 92.13483146067416%;
+            margin-left: 3.93258426966292%;
+            height: 12.20703125vw;
+        }
+
+        #gold {
+            background-color: #eddf02;
+            width: 100%;
+            height: 9.84375vw;
+        }
+
+        #grey {
+            background-color: #828282;
+            width: 19.66292134831461%;
+            height: 12.20703125vw;
+        }
+
+        #maroon {
+            background-color: #e1039a;
+            width: 54.26966292134831%;
+            height: 12.20703125vw;
+        }
+
+        #container > div#purple {
+            background-color: #630bbd;
+            width: 14.04494382022472%;
+            height: 38.57421875vw;
+            margin-top: -36.62109375vw;
+        }
+
+/* OOCSS */
+.borderBox {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-html {
-    font-family: Myriad Pro;
-    -ms-text-size-adjust: 100%; 
-    -webkit-text-size-adjust: 100%;
-    background: #fff;
+.relative {
+    position: relative;
 }
 
-body {
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.noMargin {
     margin: 0;
 }
 
+.noPadding {
+    padding: 0;
+}
 
-article,
-header,
-section {
+.noOverflow {
+    overflow: hidden;
+}
+
+.bgWhite {
+    background-color: #fff;
+}
+
+.bgBlack {
+    background-color: #000;
+}
+
+.block {
     display: block;
 }
 
-h1 {
-    font-size: 1.875em;
+.hidden {
+    display: none;
+}
+
+.textCenter {
     text-align: center;
-    margin: 0.67em 0;
+}
+
+.top0 {
+    top: 0;
+}
+
+.left0 {
+    left: 0;
+}
+
+.right0 {
+    right: 0;
+}
+
+.bottom0 {
+    bottom: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.noMarLeft {
+    margin-left: 0;
+}
+
+.noMarRight {
+    margin-right: 0;
+}
+
+.blkBorder {
+    border: .0625em solid #000;
 }
 
 .clearfix:after {
@@ -37,153 +196,14 @@ h1 {
     height: 0;
 }
 
-.clearfix {
-    display: block;
-}
-
-.isHidden {
-    display: none;
-}
-
-div.wrapper {
-    width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    z-index: 1;
-    opacity: .5;
-}
-
-.overlay-content {
-    height: 18.75em;
-    width: 32em;
-    background: #fff;
-    z-index: 3;
-    position: fixed;
-    top: 25%;
-    left: 150%;
-}
-
-    section.overlay-content.center {
-        left: 0;
-        -moz-transition: left 2s ease-in;
-        -o-transition: left 2s ease-in;
-        -webkit-transition: left 2s ease-in;
-        transition: left 2s ease-in;
-    }
-
-    .overlay-content p {
-        margin: 1.25em;
-    }
-
-.container {
-    width: 86.9140625%;
-    height: 64em;
-    margin: 0 6.54296875%;
-    position: relative;
-    clear: both;
-    z-index: -1;
-}
-
-    .container > div {
-        float: left;
-        margin: 0.48828125%;
-    }
-
-div.noMarLeft {
-    margin-left: 0;
-}
-
-div.noMarRight {
-    margin-right: 0;
-}
-
-div.blkBorder {
-    border: .0625em solid #000;
-}
-
-div.right {
-    float: right;
-}
-
-div.isInFront {
-    position: relative;
-    z-index: 2;
-}
-
-div.orange {
-    background-color: #f47a00;
-    width: 100%;
-    height: 9.84375vw;
-}
-
-div.red {
-    background-color: #fc3a1b;
-    width: 14.04494382022472%;
-    height: 12.20703125vw;
-}
-
-div.blue {
-    background-color: #04b6f0;
-    margin-top: 1.26953125%;
-    width: 69.55056179775281%;
-    height: 11.42578125vw;
-}
-
-div.black {
-    background-color: #000;
-    width: 14.04494382022472%;
-    height: 12.20703125vw;
-}
-
-div.green {
-    background-color: #10ad00;
-    width: 92.13483146067416%;
-    margin-left: 3.93258426966292%;
-    height: 12.20703125vw;
-}
-
-div.gold {
-    background-color: #eddf02;
-    width: 100%;
-    height: 9.84375vw;
-}
-
-div.grey {
-    background-color: #828282;
-    width: 19.66292134831461%;
-    height: 12.20703125vw;
-}
-
-div.maroon {
-    background-color: #e1039a;
-    width: 54.26966292134831%;
-    height: 12.20703125vw;
-}
-
-div.purple {
-    background-color: #630bbd;
-    width: 14.04494382022472%;
-    height: 38.57421875vw;
-    margin-top: -36.62109375vw;
-}
-
+/* Media Queries Adjustments */
 @media screen and (min-width: 32em) {
-    .overlay-content {
+    #overlay-content {
         left: 150%;
-        margin-left: -16em;
+        margin-left: -256px;
     }
 
-    section.overlay-content.center {
+    #overlay-content.center {
         left: 50%;
         -moz-transition: left 2s ease-in;
         -o-transition: left 2s ease-in;
